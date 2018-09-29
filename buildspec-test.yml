@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+    - echo If needing exist before testing, here writing.
+  build:
+    commands:
+    - echo Test started on `date`
+    - echo Testing now...
+    - ./gradlew test
+  post_build:
+    commands:
+    - echo Test completed on `date`
+    - echo If needing exist after testing, here writing. ex, test reporting to sns or slack.
