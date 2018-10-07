@@ -4,6 +4,7 @@ phases:
   pre_build:
     commands:
     - echo If needing exist before testing, here writing.
+    - chmod +x gradlew
   build:
     commands:
     - echo Test started on `date`
