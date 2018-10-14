@@ -14,3 +14,6 @@ phases:
     commands:
     - echo Test completed on `date`
     - echo If needing exist after testing, here writing. ex, test reporting to sns or slack.
+artifacts:
+  files:
+    - '**/*'
